@@ -1,0 +1,31 @@
+#chart rect::selection {
+  fill: #adf !important;
+}
+#chart rect:hover {
+  fill: #adf !important;
+}
+.bar-select {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+span {
+  width: 39px;
+  border-bottom: 1px solid;
+  padding: 5px;
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  height: 39px;
+  justify-content: center;
+  align-items: center;
+}
+
+span.selected {
+  background: #adf;
+}
+
+span:hover:not(.selected) {
+  background: #cfefff;
+}
